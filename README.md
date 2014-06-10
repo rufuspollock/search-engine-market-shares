@@ -1,4 +1,4 @@
-Search engine market shares around the world over time. Data sourced from NetApplications, WebSideStory, Nielsen's NetRatings, comScore's MediaMetrix and other sources. Some figures and data come from *Is Google the next Microsoft? Competition, Welfare and Regulation in Online Search, Review of Network Economics, Rufus Pollock, December 2010.* Please cite that as well as this dataset when using.
+Search engine market shares around the world over time. Data sourced from NetApplications, WebSideStory, Nielsen's NetRatings, comScore's MediaMetrix and other sources. Some figures and data come from *Is Google the next Microsoft? Competition, Welfare and Regulation in Online Search, Review of Network Economics, Rufus Pollock, December 2010.* Please cite that as well as this dataset when using this data.
 
 ## Data
 
