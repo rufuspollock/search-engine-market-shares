@@ -1,0 +1,101 @@
+{
+  "name": "search-engine-market-shares",
+  "title": "Search Engine Market Shares",
+  "homepage": "http://rufuspollock.org/2010/12/15/is-google-the-next-microsoft-competition-welfare-and-regulation-in-online-search-published/",
+  "version": "0.1.0",
+  "license": "PDDL-1.0",
+  "author": "Rufus Pollock <rufus@rufuspollock.org>",
+  "sources": [{
+    "name": "Hitslinks/NetApplications",
+    "web": "http://marketshare.hitslink.com/"
+  }],
+  "repository": "git://github.com/rgrp/search-engine-market-shares.git",
+  "resources": [
+    {
+      "name": "market-share",
+      "path": "data/market-share.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "date",
+            "description": ""
+          },
+          {
+            "name": "Country",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "AOL",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "All the Web",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "AltaVista",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Ask",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Excite",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Google",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Lycos",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "MSN",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Yahoo",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": " Others",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "name": "Source",
+            "type": "string",
+            "description": ""
+          }
+        ]
+      }
+    }
+  ],
+  "views": [
+    {
+      "id": "graph",
+      "label": "US Market Shares",
+      "type": "Graph",
+      "state": {
+        "group": "Date",
+        "series": ["Yahoo", "MSN", "Google", "AltaVista", "Ask"]
+      }
+    }
+  ]
+}
