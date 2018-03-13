@@ -27,7 +27,7 @@ The data is made available free of charge on a monthly basis that includes month
 '''
 import urllib
 import sys
-import econ.data.tabular as t
+import datautil.tabular as t
 import tidy
 
 START_MONTH = 69
