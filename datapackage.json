@@ -3,11 +3,13 @@
   "title": "Search Engine Market Shares",
   "homepage": "http://rufuspollock.org/2010/12/15/is-google-the-next-microsoft-competition-welfare-and-regulation-in-online-search-published/",
   "version": "0.1.0",
-  "license": "PDDL-1.0",
-  "author": "Rufus Pollock <rufus@rufuspollock.org>",
-  "sources": [{
-    "name": "Hitslinks/NetApplications",
-    "web": "http://marketshare.hitslink.com/"
+  "licenses": [{
+    "name": "ODC-PDDL-1.0"
+  }],
+  "contributors": [{
+    "title": "Rufus Pollock",
+    "path": "https://rufuspollock.com",
+    "role": "author"
   }],
   "repository": "git://github.com/rgrp/search-engine-market-shares.git",
   "resources": [
@@ -89,10 +91,11 @@
   ],
   "views": [
     {
-      "id": "graph",
-      "label": "US Market Shares",
-      "type": "Graph",
-      "state": {
+      "name": "graph",
+      "title": "US Market Shares",
+      "specType": "simple",
+      "spec": {
+        "type": "line",
         "group": "Date",
         "series": ["Yahoo", "MSN", "Google", "AltaVista", "Ask"]
       }
